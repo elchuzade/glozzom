@@ -77,8 +77,13 @@ body {
 #faq a {
   color: #fff;
   text-decoration: none; }
-#faq .card-body, #faq .card-header {
+#faq .card-body,
+#faq .card-header {
   background: #333; }
+
+#main-footer {
+  background: black;
+  color: white; }
 
 @media (max-width: 575px) {
   .navbar .nav-item.active {

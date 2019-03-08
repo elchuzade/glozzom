@@ -1,0 +1,13 @@
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important; }
+
+.navbar .nav-item.active {
+  border-bottom: #444 3px solid; }
+
+@media (max-width: 575px) {
+  .navbar .nav-item.active {
+    border-bottom: none;
+    border-left: #444 3px solid; } }

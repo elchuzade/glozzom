@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Bootstrap Theme</title>
@@ -103,6 +106,125 @@
       </div>
     </section>
 
+    <!-- ICON BOXES -->
+    <section id="icon-boxes" class="p-5">
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col-md-4 mb-2 px-2">
+            <div class="card pt-4 bg-danger text-white text-center">
+              <i class="fas fa-building fa-3x mb-2"></i>
+              <h3>Sample Heading</h3>
+              <p class='px-2'>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellendus, sunt.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 px-2">
+            <div class="card pt-4 bg-dark text-white text-center">
+              <i class="fas fa-bullhorn fa-3x mb-2"></i>
+              <h3>Sample Heading</h3>
+              <p class='px-2'>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellendus, sunt.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 px-2">
+            <div class="card pt-4 bg-danger text-white text-center">
+              <i class="fas fa-comments fa-3x mb-2"></i>
+              <h3>Sample Heading</h3>
+              <p class='px-2'>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellendus, sunt.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-1">
+          <div class="col-md-4 mb-2 px-2">
+            <div class="card pt-4 bg-dark text-white text-center">
+              <i class="fas fa-box fa-3x mb-2"></i>
+              <h3>Sample Heading</h3>
+              <p class='px-2'>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellendus, sunt.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 px-2">
+            <div class="card pt-4 bg-danger text-white text-center">
+              <i class="fas fa-credit-card fa-3x mb-2"></i>
+              <h3>Sample Heading</h3>
+              <p class='px-2'>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellendus, sunt.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 px-2">
+            <div class="card pt-4 bg-dark text-white text-center">
+              <i class="fas fa-coffee fa-3x mb-2"></i>
+              <h3>Sample Heading</h3>
+              <p class='px-2'>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellendus, sunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="p-4 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row text-center">
+          <div class="col">
+            <div class="slider">
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                    quidem!
+                  </p>
+                  <footer class="blockquote-footer">
+                    John Doe From
+                    <cite title="Apple Inc">Apple Inc</cite>
+                  </footer>
+                </blockquote>
+              </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                    quidem!
+                  </p>
+                  <footer class="blockquote-footer">
+                    Sam Smith From
+                    <cite title="Google Inc">Google Inc</cite>
+                  </footer>
+                </blockquote>
+              </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                    quidem!
+                  </p>
+                  <footer class="blockquote-footer">
+                    Meghan Williams From
+                    <cite title="Facebook Inc">Facebook Inc</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
     <footer id="main-footer" class="text-center p-4">
       <div class="container">
@@ -129,41 +251,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 
     <script>
       // Get the current year for the copyright
       $('#year').text(new Date().getFullYear());
 
-      // Configure Slider
-      $('.carousel').carousel({
-        interval: 40000,
-        pause: 'hover'
-      });
-
-      // Lightbox init
-      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-      });
-
-      // Video Play
-      $(function() {
-        // Auto play modal video
-        $('.video').click(function() {
-          var theModal = $(this).data('target'),
-            videoSRC = $(this).attr('data-video'),
-            videoSRCauto =
-              videoSRC +
-              '?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1';
-          $(theModal + ' iframe').attr('src', videoSRCauto);
-          $(theModal + ' button.close').click(function() {
-            $(theModal + ' iframe').attr('src', videoSRC);
-          });
-        });
+      $('.slider').slick({
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1
       });
     </script>
   </body>

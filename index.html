@@ -146,17 +146,23 @@
     <!-- HOME HEADING SECTION -->
     <section id="home-heading" class="p5">
       <div class="dark-overlay">
-        <div class="row">
-          <div class="col">
-            <div class="container pt-5">
-              <h1>Are You Ready To Get Started?</h1>
-              <p class="d-none d-md-block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                consequatur id obcaecati, reiciendis sit et animi quod dolore
-                deserunt eligendi?
-              </p>
+        <div class="container">
+          <div class="row">
+              <div class="col">
+                <div class="container pt-5">
+                  <div class="row">
+                    <div class="col">
+                      <h1>Are You Ready To Get Started?</h1>
+                      <p class="d-none d-md-block">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolores consequatur id obcaecati, reiciendis sit et animi
+                        quod dolore deserunt eligendi?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
@@ -185,21 +191,27 @@
     <!-- VIDEO PLAY -->
     <section id="video-play">
       <div class="dark-overlay">
-        <div class="row">
-          <div class="col">
-            <div class="container p-5">
-              <a
-                href="#"
-                class="video"
-                data-video="https://www.youtube.com/embed/HnwsG9a5riA"
-                data-toggle="modal"
-                data-target="#videoModal"
-              >
-                <i class="fas fa-play fa-3x"></i
-              ></a>
-              <h1>See What We Do</h1>
+        <div class="container">
+          <div class="row">
+              <div class="col">
+                <div class="container p-5">
+                  <div class="row">
+                    <div class="col">
+                      <a
+                        href="#"
+                        class="video"
+                        data-video="https://www.youtube.com/embed/HnwsG9a5riA"
+                        data-toggle="modal"
+                        data-target="#videoModal"
+                      >
+                        <i class="fas fa-play fa-3x"></i
+                      ></a>
+                      <h1>See What We Do</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
@@ -209,8 +221,8 @@
       <div class="container">
         <h1 class="text-center">Photo Gallry</h1>
         <p class="text-center">Check out our photos</p>
-        <div class="row mb-4">
-          <div class="col-md-4">
+        <div class="row mb-md-2">
+          <div class="col-md-4 my-1 px-2">
             <a
               href="https://source.unsplash.com/random/560x560"
               data-toggle="lightbox"
@@ -225,7 +237,7 @@
               />
             </a>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 my-1 px-2">
             <a
               href="https://source.unsplash.com/random/560x560"
               data-toggle="lightbox"
@@ -240,7 +252,7 @@
               />
             </a>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 my-1 px-2">
             <a
               href="https://source.unsplash.com/random/560x560"
               data-toggle="lightbox"
@@ -256,8 +268,8 @@
             </a>
           </div>
         </div>
-        <div class="row mb-4">
-          <div class="col-md-4">
+        <div class="row mb-md-2">
+          <div class="col-md-4 my-1 px-2">
             <a
               href="https://source.unsplash.com/random/560x560"
               data-toggle="lightbox"
@@ -272,7 +284,7 @@
               />
             </a>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 my-1 px-2">
             <a
               href="https://source.unsplash.com/random/560x560"
               data-toggle="lightbox"
@@ -287,7 +299,7 @@
               />
             </a>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 my-1 px-2">
             <a
               href="https://source.unsplash.com/random/560x560"
               data-toggle="lightbox"
@@ -305,6 +317,47 @@
         </div>
       </div>
     </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="text-center p-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Sign Up For Our Newsletter</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
+              at, illum quasi repudiandae, possimus repellendus ratione ducimus
+              tempora voluptatibus harum ipsa odio commodi repellat nesciunt
+              quam tempore minima voluptatem eligendi.
+            </p>
+            <form class="form-inline justify-content-center">
+              <input
+                type="text"
+                class="form-control mb-2 mx-1"
+                placeholder="Enter Name"
+              />
+              <input
+                type="email"
+                class="form-control mb-2 mx-1"
+                placeholder="Enter Email"
+              />
+              <button class="btn btn-primary mb-2 mx-1">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="ro">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- VIDEO MODAL -->
     <div class="modal fade" id="videoModal">
@@ -349,7 +402,7 @@
 
       // Configure Slider
       $('.carousel').carousel({
-        interval: 4000,
+        interval: 40000,
         pause: 'hover'
       });
 
